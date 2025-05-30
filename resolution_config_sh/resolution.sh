@@ -21,5 +21,7 @@ xrandr --output "$OUTPUT" --mode "$MODEDEF"
 
 echo "xrandr setup complete."
 echo "Wifi turned off complete."
+echo "i3 configuration reloaded."
 rfkill block all 
-eval "$(zoxide init bash)" ~/.bashrc
+i3-msg reload
+#eval "$(zoxide init bash)" ~/.bashrc
