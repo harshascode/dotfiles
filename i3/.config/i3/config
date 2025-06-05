@@ -15,8 +15,9 @@ set $mod Mod1
 # Added by Harsh
 #exec_always --no-startup-id ~/resolution.sh
 exec --no-startup-id picom
-exec_always --no-startup-id feh --bg-scale ~/sunflower-wallpaper.jpeg
+exec_always --no-startup-id feh --bg-scale ~/wallpapers/sunflower-wallpaper.jpeg
 bindsym $mod+space exec --no-startup-id rofi -show combi
+#bindsym $mod+shift+del exec_always --no-startup-id i3loc
 #bindsym Mod4+b exec --no-startup-id brave-browser 
 
 bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
