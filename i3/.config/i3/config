@@ -12,13 +12,15 @@
 set $mod Mod1
 
 
-# Added by Harsh 
+# Added by Harsh
 #exec_always --no-startup-id ~/resolution.sh
 exec --no-startup-id picom
-exec_always --no-startup-id feh --bg-scale ~/wallpapers/sunflower-wallpaper.jpeg
+exec_always --no-startup-id feh --bg-scale ~/wallpapers/12-Dark.jpg
+#exec_always --no-startup-id feh --bg-scale ~/wallpapers/sunflower-wallpaper.jpeg
 bindsym $mod+space exec --no-startup-id rofi -show combi
 #bindsym $mod+shift+del exec_always --no-startup-id i3loc
 #bindsym Mod4+b exec --no-startup-id brave-browser 
+exec --no-startup-id parcellite
 
 bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
 bindsym $mod+Print exec maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).jpg"
@@ -269,4 +271,3 @@ position top
   }
   status_command i3status
 }
-
