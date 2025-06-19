@@ -18,7 +18,7 @@ exec --no-startup-id picom
 exec_always --no-startup-id feh --bg-scale ~/wallpapers/macOS-Monterey-Dark-Mode.webp
 #exec_always --no-startup-id feh --bg-scale ~/wallpapers/Dark-12.png
 #exec_always --no-startup-id feh --bg-scale ~/wallpapers/sunflower-wallpaper.jpeg
-bindsym $mod+space exec --no-startup-id rofi -show combi
+#bindsym $mod+space exec --no-startup-id rofi -show combi
 #bindsym $mod+shift+del exec_always --no-startup-id i3loc
 #bindsym Mod4+b exec --no-startup-id brave-browser 
 exec --no-startup-id parcellite
@@ -31,6 +31,14 @@ bindsym Shift+Print exec maim --select "/home/$USER/Pictures/$(date).jpg"
 default_border pixel 0
 default_floating_border pixel 1
 #for_window [class="^.*"] border pixel 1
+
+# run rofi programs
+bindsym $mod+a exec "rofi -show window -no-default-config -config ~/.config/rofi/main.rasi"
+bindsym $mod+space exec "rofi -show drun -no-default-config -config ~/.config/rofi/main.rasi"
+bindsym $mod+s exec "rofi -show drun -no-default-config -config ~/.config/rofi/full_screen.rasi"
+bindsym $mod+z exec "rofi -show  -modi ':rofi-bookmarks' -no-default-config -config ~/.config/rofi/main.rasi"
+bindsym $mod+x exec "rofi-powermenu"
+bindsym $mod+c exec "rofi-screenshot"
 
 
 ## Clipboard Screenshots
@@ -121,7 +129,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -132,7 +140,7 @@ bindsym $mod+Shift+space floating toggle
 #bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
