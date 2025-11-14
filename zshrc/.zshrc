@@ -38,3 +38,8 @@ eval "$(zoxide init zsh)"
 # alias gs="git status"
 # alias gc="git commit"
 alias zh="cd ~"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$HOME/.local/bin:$PATH
