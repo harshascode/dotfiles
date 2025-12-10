@@ -15,7 +15,7 @@ set $mod Mod1
 # Added by Harsh
 #exec_always --no-startup-id ~/resolution.sh
 exec --no-startup-id picom
-exec_always --no-startup-id feh --bg-scale ~/wallpapers/pascal-debrunner.jpg
+exec_always --no-startup-id feh --bg-scale ~/wallpapers/spaceqa.jpg
 #exec_always --no-startup-id feh --bg-scale ~/wallpapers/Dark-12.png
 #exec_always --no-startup-id feh --bg-scale ~/wallpapers/sunflower-wallpaper.jpeg
 #bindsym $mod+space exec --no-startup-id rofi -show combi
@@ -186,6 +186,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+bindsym $mod+Shift+w exec --no-startup-id ~/resolution.sh
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 

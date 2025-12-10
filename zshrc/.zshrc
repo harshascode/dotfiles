@@ -43,3 +43,15 @@ alias zh="cd ~"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$HOME/.local/bin:$PATH
+
+# pnpm
+export PNPM_HOME="/home/harsh/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+#
+#
+export GEMINI_API_KEY="AIzaSyA811hS_L6TEuPZmmis5D53AOHG0uXCAx0"
+
